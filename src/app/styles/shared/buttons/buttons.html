@@ -1,0 +1,9 @@
+
+<button
+  type="button"
+  class="button"
+  [class.button--primary]="buttonType === 'primary'"
+  [class.button--secondary]="buttonType === 'secondary'"
+  [class.button--icon-only]="buttonType === 'icon-only'"
+> <ng-content>{{ buttonType }}</ng-content>
+</button>
